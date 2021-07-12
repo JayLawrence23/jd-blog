@@ -15,7 +15,7 @@ const Create = () => {
 
         setIsPending(true);
 
-        fetch('https://my-json-server.typicode.com/Jaylawrence23/json-server-blog/db', {
+        fetch('https://my-json-server.typicode.com/Jaylawrence23/json-server-blog/blogs', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)
@@ -23,7 +23,7 @@ const Create = () => {
             console.log('new blog added');
             setIsPending(false);
             // history.go(-1) //to go back
-            history.push('/'); // to redirect to Home
+            history.push('/jd-blog'); // to redirect to Home
         })
 
         

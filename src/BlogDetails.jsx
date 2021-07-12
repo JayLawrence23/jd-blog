@@ -7,11 +7,11 @@ const BlogDetails = () => {
     
 
     const { id } = useParams(); //to get the parameters in 
-    const { data: blog, isPending, error } = useFetch('https://my-json-server.typicode.com/Jaylawrence23/json-server-blog/' + id);
+    const { data: blog, isPending, error } = useFetch('https://my-json-server.typicode.com/Jaylawrence23/json-server-blog/blogs/' + id);
     const history = useHistory();
 
     const handleDelete = () => {
-        fetch('http://localhost:8000/blogs/' + blog.id, {
+        fetch('https://my-json-server.typicode.com/Jaylawrence23/json-server-blog/blogs/' + blog.id, {
             method: 'DELETE'
         }).then((e) => {
             history.push('/');
