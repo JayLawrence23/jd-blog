@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
     
-    const { data, isPending, error } = useFetch('https://my-json-server.typicode.com/JayLawrence23/jd-blog'); //destructing variable
+    const { data, isPending, error } = useFetch('https://my-json-server.typicode.com/Jaylawrence23/json-server-blog'); //destructing variable
     
 
     return (
