@@ -23,7 +23,7 @@ const Create = () => {
             console.log('new blog added');
             setIsPending(false);
             // history.go(-1) //to go back
-            history.push('/jd-blog'); // to redirect to Home
+            history.push('/jd-blog/'); // to redirect to Home
         })
 
         
