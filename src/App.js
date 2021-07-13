@@ -15,13 +15,13 @@ const App = () => {
         <Navbar/>
         <div className="content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/jd-blog">
               <Home />
             </Route>
-            <Route path="/create">
+            <Route path="/jd-blog/create">
               <Create/>
             </Route>
-            <Route path="/blogs/:id">
+            <Route path="/jd-blog/blogs/:id">
               <BlogDetails/>
             </Route>
             <Route path="*">
