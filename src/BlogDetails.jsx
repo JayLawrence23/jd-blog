@@ -14,7 +14,7 @@ const BlogDetails = () => {
         fetch('https://my-json-server.typicode.com/Jaylawrence23/json-server-blog/blogs/' + blog.id, {
             method: 'DELETE'
         }).then((e) => {
-            history.push('/');
+            history.push('/jd-blog');
         })
     }
 
